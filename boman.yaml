@@ -6,7 +6,7 @@ SCA:
   language: "ruby" 
 
 SAST:
-  language: ["ruby,python-snyk,node-snyk,ruby-snyk,python,semgrep,nodejs"]
+  language: "ruby,python-snyk,node-snyk,ruby-snyk,python,semgrep,nodejs"
 
 DAST:
   type: "WEB" ## API, WEB, WEB-ADV
