@@ -6,10 +6,10 @@ SCA:
   language: "ruby" 
 
 SAST:
-  language: "ruby" 
+  language: ["ruby","python-snyk","node-snyk","ruby-snyk","python","ruby","semgrep","nodejs"]
 
 DAST:
   type: "WEB" ## API, WEB, WEB-ADV
-  URL: "https://www.boman.ai/" 
+  URL: "http://reddyprasade.github.io/" 
 
 #Secret_Scan: True
