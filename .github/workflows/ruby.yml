@@ -7,6 +7,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          name: code-coverage-report
+          path: output/test/code-coverage.json
       # Runs a single command using the runners shell
       - name: Install packages
         run: sudo pip install boman-cli
