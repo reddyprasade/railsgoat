@@ -8,8 +8,8 @@ SCA:
 SAST:
   language: "ruby"
 
-DAST:
-  type: "WEB" ## API, WEB, WEB-ADV
-  URL: "http://reddyprasade.github.io/" 
+# DAST:
+#   type: "WEB" ## API, WEB, WEB-ADV
+#   URL: "http://reddyprasade.github.io/" 
 
 Secret_Scan: True
