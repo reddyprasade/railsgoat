@@ -17,5 +17,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: boman_raw_files
-          #path: ./
-          path: boman_ruby.json
+          path: boman_node.json
