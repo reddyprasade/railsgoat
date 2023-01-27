@@ -3,17 +3,18 @@ on: [push]
 jobs:
   boman_scan:
     runs-on: ubuntu-latest
-    name: Test Job
+    name: Boman
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      # Runs a single command using the runners shell
-      - name: Install packages
-        run: sudo pip install boman-cli
-      - name: Run scan  
-        run: sudo boman-cli -a run -u https://devapi.boman.ai/v2/
-      - name: Upload boman results 
+
+      - name: Boman
+        run: |
+          sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==0.8
+          sudo boman-cli-uat -a run -u https://devapi.boman.ai/v2/
+          
+      - name: Upload boman result as raw file
         uses: actions/upload-artifact@v3
         with:
-          name: homework
+          name: boman_raw_files
           path: boman_semgrep.json
