@@ -6,7 +6,7 @@ Auth:
  # language: "semgrep"
 
 SAST:
-  language: "node-snyk"
+  language: "ruby-node"
 
 # DAST:
 #   type: "WEB" ## API, WEB, WEB-ADV
