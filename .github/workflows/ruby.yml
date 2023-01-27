@@ -12,6 +12,8 @@ jobs:
         run: sudo pip install boman-cli
       - name: Run scan  
         run: sudo boman-cli -a run -u https://devapi.boman.ai/v2/
-          with:
-            name: my-artifact
-            path: boman_zap.json
+      - name: Upload boman results 
+        uses: actions/upload-artifact@v3
+        with:
+          name: homework
+          path: boman_semgrep.json
