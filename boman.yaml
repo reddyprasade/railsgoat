@@ -2,8 +2,8 @@ Auth:
   project_token: "0e86f4a4-92ff-44e7-baab-05f3031cf347"
   customer_token: "1f3dc7b3-cb4e-4eb9-b5ee-c780947f12e3" #devtokens
   
-SCA:
-  language: "semgrep"
+#SCA:
+ # language: "semgrep"
 
 SAST:
   language: "semgrep"
@@ -12,4 +12,4 @@ SAST:
 #   type: "WEB" ## API, WEB, WEB-ADV
 #   URL: "http://reddyprasade.github.io/" 
 
-Secret_Scan: True
+#Secret_Scan: True
