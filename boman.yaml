@@ -6,7 +6,7 @@ SCA:
   language: "semgrep"
 
 SAST:
-  language: "ruby,semgrep"
+  language: "semgrep"
 
 # DAST:
 #   type: "WEB" ## API, WEB, WEB-ADV
