@@ -18,7 +18,7 @@ on:
     # The branches below must be a subset of the branches above
     branches: [ "main" ]
   schedule:
-    - cron: '39 2 * * 6'
+    - cron: '39 5 * * 6'
 
 jobs:
   analyze:
@@ -73,8 +73,6 @@ jobs:
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
       with:
-        category: "/language:${{matrix.language}}"
         name: my-artifact
-        path: codql.json
-
-  
+        path: codeql_data.json
+        category: "/language:${{matrix.language}}"
